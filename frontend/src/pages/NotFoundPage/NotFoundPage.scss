@@ -1,0 +1,30 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+@use "../../styles/typography" as *;
+
+
+.not-found__container{
+    display: flex;
+    align-items: center;
+    padding-top: 10rem;
+    flex-direction: column;
+}
+
+.not-found__main-message {
+    font-size: 10rem;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 400;
+}
+
+.not-found__second-message  {
+    font-size: 3rem;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 400;
+}
+
+.not-found__redirect  {
+    font-size: 1rem;
+    font-family: 'Avenir', sans-serif;
+    font-weight: 600;
+    padding-top: 2rem;
+}

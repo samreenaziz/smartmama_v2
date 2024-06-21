@@ -1,0 +1,64 @@
+.description {
+  &__title {
+    font-weight: 600;
+    padding: 1 rem;
+
+
+    @include tablet {
+      border-bottom: none;
+      padding: 2 rem;
+
+      font-weight: 700;
+      line-height: 2.06rem;
+    }
+
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1 rem;
+
+
+    &--display {
+      display: flex;
+      flex-direction: column;
+      gap: 1 rem;
+      justify-content: space-between;
+      padding: 1 rem;
+
+      @include tablet {
+        flex-direction: row;
+        gap: 2 rem;
+        padding: 0.5rem 2 rem;
+      }
+      @include desktop {
+        padding-right: 2 rem;
+      }
+    }
+
+&__author {
+    font-weight: 600;
+
+    @include tablet {
+      width: auto;
+    }
+    @include desktop {
+      font-weight: 700;
+    }
+  }
+&__article-text {
+    padding: $mobile-padding;
+    padding-top: $mobile-padding;
+
+    @include tablet {
+      padding: 2rem;
+    }
+    @include desktop {
+      padding-right: 2rem;
+      padding-bottom: 3.25rem;
+    }
+  }
+  }
+}

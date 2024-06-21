@@ -1,0 +1,88 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+
+  border: 0;
+  border-radius: 2.25rem;
+  color: #ffffff;
+  background-color: #ff6e6c;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "AvenirNext";
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.productList {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    border: 2px solid coral;
+    width: 14rem;
+    height: 20rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+
+  &__image-container {
+    display: flex;
+    justify-content: center;
+  }
+  &__image {
+    width: 32%;
+    border-radius: 0.25rem;
+    object-fit: cover;
+    vertical-align: text-bottom;
+
+    @include tablet {
+      vertical-align: baseline;
+    }
+    @include desktop {
+      width: 28%;
+    }
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    max-width: 10rem;
+
+    @include desktop {
+      min-width: 10rem;
+    }
+  }
+  &__product-title {
+    font-weight: 600;
+  }
+
+  &__button {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-size: 1.25rem;
+    background-repeat: no-repeat;
+    background-position-x: 0.7rem;
+    background-position-y: 0.55rem;
+
+    @include tablet {
+      order: 1;
+      width: 10rem;
+
+      margin: 0;
+    }
+  }
+}

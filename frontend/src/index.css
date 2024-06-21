@@ -1,0 +1,27 @@
+:root {
+  color-scheme: light dark;
+
+
+}
+
+a {
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: brown;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
